@@ -5,8 +5,8 @@ BabelCamp 2018
 
 * Navegador
 * Editor de código
-*Git
-*Node.JS
-*npm
-*Servidor web local
-*npm, Grunt, Gulp, Webpack...
+* Git
+* Node.JS
+* npm
+* Servidor web local
+* npm, Grunt, Gulp, Webpack...
