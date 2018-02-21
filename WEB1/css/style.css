@@ -1,0 +1,29 @@
+@import "../../node_modules/font-awesome/css/font-awesome.min.css";
+/* a.b.c.d
+a= . b= . c= . d=
+*/
+h1{
+    font-size: 2rem;
+    color: blue
+    /* 0.0.0.1 especifidad*/
+}
+h2{
+    font-size: 2rem;
+    color: blue
+}
+#p1{
+    color: aqua;
+}
+.verde{
+    color: green;
+}
+.grande{
+    font-size: 4em;
+}
+header p{ /*Selector multiple*/
+    color:deeppink;
+    /*0.0.0.1 especifidad */
+}
+/*[lang]{
+    color:darkslateblue;
+}*/
