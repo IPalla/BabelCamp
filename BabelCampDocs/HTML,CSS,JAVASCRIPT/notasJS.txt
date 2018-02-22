@@ -1,0 +1,67 @@
+TIPOS:
+
+string
+number
+boolean
+
+undefined
+object
+
+undefined(null)
+object(null)
+
+Los objects son mutables
+Arrays
+String 
+Number 
+Boolean 
+Function
+Date
+Math
+JSON
+RegExp
+Error
+
+camelcase excepto constructores
+
+typeof
+
+
+Variables pueden ser let o var, let es de ámbito más pequeño, PREFERIBLE
+constantes con const, del mismo ámbito que let
+
+
+ArrowFunction es ES6
+var mostrarA = (pData1, pData2) =>{
+console.log(pData1,pData2);
+}
+
+-----OBJETOS------
+let user = {
+    nombre : "carlos",
+    apellido : "fernandez",
+    edad : 21,
+    esVaron : true
+}
+
+Te puedes cargar una funcion igualandola a cualquier numero/objeto, mejor declararlas con const 
+Los objetos son punteros
+Para CLONAR objetos: Object.assign({},user)
+mostrar(Object.assign({},user)) esa funcion mostrar recibe una copia
+
+Los objetos JSON tienen dos metodos: 
+JSON.parse() crea objeto a partir de string JSON
+JSON.stringify() devuelve un string tipo JSON
+
+
+Callbacks: funciones que se pasan como parametro
+
+//Template string ES6
+´Hola que tal 
+    el usuario es ${usuario.nombre}´
+
+Arrays: declaracion
+let data = new Array();
+let data = new Array(12,22,33);
+let data = [] 
+let data = ["Juan", "Rodri"] 
