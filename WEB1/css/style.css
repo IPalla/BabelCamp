@@ -1,29 +1,54 @@
 @import "../../node_modules/font-awesome/css/font-awesome.min.css";
-/* a.b.c.d
-a= . b= . c= . d=
+
+:root{
+    --color-principal: green;
+}
+body>p:nth-of-type(1){
+    color: var(--color-principal);
+}
+ul:hover{
+    content: "aqui termina";
+}
+ul ::after{
+    content: counter;
+}
+
+/*
+"espacio" descendiente
+>hijo directo
+~hermano
++ hermano adyacente
+:nth-of-type(1) 
+:nth-child(2)
+
+
+Definir variables en :root{
+    --color-principal: green;
+}
+Para usar el valor
+color: var(--color-principal);
+
+Pagina can i use, saber si puedo usaar una propiedad en los navegadores
+
+Funcion calc 
+
 */
-h1{
-    font-size: 2rem;
-    color: blue
-    /* 0.0.0.1 especifidad*/
+
+/*HOJA DE RESETEO
+
+*,
+*::before, *::after, *:before, *:after{
+    box-sizing: border-box;
 }
-h2{
-    font-size: 2rem;
-    color: blue
-}
-#p1{
-    color: aqua;
-}
-.verde{
-    color: green;
-}
-.grande{
-    font-size: 4em;
-}
-header p{ /*Selector multiple*/
-    color:deeppink;
-    /*0.0.0.1 especifidad */
-}
-/*[lang]{
-    color:darkslateblue;
-}*/
+
+
+NORMALIZAR: reset para todos los navegadores
+
+Utilizar querys para diseño responsive
+
+Grids en bootstrap
+
+Float flotan los elementos: left, right...
+
+
+*/

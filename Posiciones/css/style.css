@@ -1,0 +1,32 @@
+@import "./reset.css";
+@import "../../node_modules/font-awesome/css/font-awesome.min.css";
+
+.flotar p:not(:last-child){
+    width: 20%;
+    float: left;
+    text-align: justify;
+    margin-right: 3%;
+    background-color: blueviolet;
+    padding: 1rem 2rem;
+}
+div.flotar{
+    width: 90%;
+    margin: 2rem auto;
+    border: 1px solid grey;
+    overflow: hidden;
+    min-width: 20px;
+}
+
+.inline p{
+    width: 22%;
+    background-color: blueviolet;
+    padding: 2% 2%;
+    display: inline-block;
+}
+.inline p:not(:first-child){
+    margin-left: -5px;
+}
+div.inline{
+    
+    border: 1px solid grey;
+}

@@ -1,0 +1,35 @@
+@import "./reset.css";
+@import "../../node_modules/font-awesome/css/font-awesome.min.css";
+
+
+.wrappper{
+    margin: 2rem auto;
+    max-width: 960px;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    border-radius: 2%;
+
+}
+header{
+    font-family: Bevan, cursive;
+    font-weight: bold;
+    margin-top: 2rem;
+    margin-botton: 2rem;
+    background-color: rgba(128,0,0,1);
+    coor: beige;
+    box-shadow: 10px 10 px beige;
+    padding: 2rem 1rem;
+
+}
+header h1{
+    font-size: 3rem;
+}
+
+footer address p{
+    font-weight: bold;
+}
+figure{
+    float: left;
+    width: 25%;
+    margin-right: 1rem;
+}
