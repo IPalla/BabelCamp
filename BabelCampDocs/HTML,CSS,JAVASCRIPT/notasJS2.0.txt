@@ -22,3 +22,5 @@ class Main {
         var main = new Main();
     }, false);
 })();
+
+Siempre que manejemos un evento y la funcion lleve un this hacemos .bind(this)
