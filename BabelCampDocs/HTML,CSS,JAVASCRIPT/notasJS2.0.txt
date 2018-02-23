@@ -1,0 +1,24 @@
+/////JAVASCRIPT EN LA WEB
+(function() {
+    document.addEventListener("DOMContentLoaded", main, false);
+})();
+//ACCESO AL DOM
+document.getElementById(12);
+document.querySelector('button');
+document.querySelectorAll('button'); Devuelve array con TODOS
+
+//2.0
+
+una clase por fichero
+
+class Main {
+    constructor(){
+       //LOQUESEA
+    }
+}
+
+(function() {
+    document.addEventListener("DOMContentLoaded", ()=>{
+        var main = new Main();
+    }, false);
+})();
