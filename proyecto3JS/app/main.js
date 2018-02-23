@@ -1,8 +1,11 @@
 class main {
     constructor(){
-        this.tareas = [];
+        this.tareas = []; 
+        if(localStorage.getItem("tareas")){
+            this.tareas= JSON.parse(localStorage.getItem("tareas"));
+        }
         this.user= {
-            nombre: ""
+            nombre: localStorage.getItem("nombre")
         }
         this.vista = {
             btnRegistrar: document.querySelector('#btnRegistrar'),
@@ -17,14 +20,22 @@ class main {
             this.vista.resultado.innerHTML=`<p> Tu nombre es ${this.user.nombre} </p>`;
             //this.vista.resultado.className="rojo";
             this.vista.resultado.classList.add("rojo");
+            localStorage.setItem("nombre", this.user.nombre);
         });
         this.vista.btnTarea.addEventListener("click", this.btnAdd.bind(this), false);
-
+        if(this.user.nombre)
+            this.vista.resultado.innerHTML=`<p> Tu nombre es ${this.user.nombre} </p>`;
+        if(this.tareas.length > 0)
+            this.mostrarTareas();
     }
 
     btnAdd(){
-        let lista=`<ul>`;
         this.tareas.push(this.vista.inputTarea.value);
+        localStorage.setItem("tareas", JSON.stringify(this.tareas));
+        this.mostrarTareas();
+    }
+    mostrarTareas(tareas){
+        let lista=`<ul>`;
         this.tareas.forEach(element => {
             lista+=`<li>${element}</li>`
         });

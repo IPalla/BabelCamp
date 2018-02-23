@@ -24,3 +24,8 @@ class Main {
 })();
 
 Siempre que manejemos un evento y la funcion lleve un this hacemos .bind(this)
+
+//Para guardar arrays en LocalStorage
+
+JSON.parse(localStorage.getItem("tareas"));
+localStorage.setItem("tareas", JSON.stringify(this.tareas));
