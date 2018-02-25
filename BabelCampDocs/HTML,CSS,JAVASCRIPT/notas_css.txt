@@ -39,3 +39,10 @@ MICRO FORMATS: En el footer poner address card en micro formato. hcard
 microformats.org
 
 */
+
+
+
+//****
+
+bootstrap
+https://www.w3schools.com/bootstrap/

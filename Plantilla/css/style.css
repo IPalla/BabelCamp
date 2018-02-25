@@ -1,3 +1,11 @@
 @import "./reset.css";
-@import "../../node_modules/font-awesome/css/font-awesome.min.css";
+@import "../css/font-awesome/css/font-awesome.min.css";
 
+
+.footer-copyright{
+    
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background-color: #474e5d;
+    color: #ffffff;
+}
