@@ -3,9 +3,12 @@
 
 
 .footer-copyright{
-    
-    padding-top: 70px;
-    padding-bottom: 70px;
+    height: 7rem;
+    bottom: 0px;
     background-color: #474e5d;
     color: #ffffff;
+}
+.container-fluid {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
 }
