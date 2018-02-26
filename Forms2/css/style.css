@@ -1,7 +1,6 @@
 @import "./reset.css";
 @import "../css/font-awesome/css/font-awesome.min.css";
 
-
 nav{
     border: radius 5px;
     background-color: green;
@@ -27,15 +26,26 @@ nav a:hover{
     background-color: grey;
 }
 
+
+form button{
+    cursor: pointer;
+}
 .container-fluid {
     padding-top: 7rem;
     padding-bottom: 7rem;
 }
-
-
+input:required{
+    background-color: red;
+}
+input:valid{
+    background-color: green;
+}
 .footer-copyright{
     height: 7rem;
     bottom: -1px;
     background-color: #474e5d;
     color: #ffffff;
+}
+#btnSubmit{
+    color:red;
 }

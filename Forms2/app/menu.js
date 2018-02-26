@@ -2,18 +2,22 @@ export class Main{
     constructor(){
         console.log("Cargado");
         this.vista = {
-            aBtnsMenu: document.querySelectorAll('a'),
-            eArtcile : document.querySelector('article')
+            btnSubmit : document.querySelector('#btnSubmit'),
+            range: document.querySelector("input[type='range']"),
+            img: document.querySelector('img')
         }
-        this.vista.aBtnsMenu.forEach( (item) => {
-            item.addEventListener('click', this.menuItems.bind(this), false)
-        })
-        this.vista.eArtcile.innerHTML = '<h2>Inicio</h2>';
+        this.vista.range.addEventListener('drag', this.range.bind(this), false);
+        this.vista.btnSubmit.addEventListener('click', this.menuItems.bind(this), false);
     }
     menuItems(oEv){
-        oEv.preventDefault()
-        console.log(`Pulsado ${oEv.target.id}`)
-        console.dir(oEv.target.id)
-        this.vista.eArtcile.innerHTML = `<h2>${oEv.target.id.toUpperCase()}</h2>`
+        //oEv.preventDefault();
+        var inputs= document.querySelectorAll("input[type='radio']");
+        inputs.forEach(element => {
+            console.dir(element);
+        });
+    }
+    range(oEv){
+        this.vista.img.width=this.vista.range.value*1.5;
+        this.vista.img.height=this.vista.range.value*1.5;
     }
 }
