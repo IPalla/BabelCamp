@@ -33,3 +33,8 @@ Siempre que manejemos un evento y la funcion lleve un this hacemos .bind(this)
 
 JSON.parse(localStorage.getItem("tareas"));
 localStorage.setItem("tareas", JSON.stringify(this.tareas));
+
+//PARA SELECCIONAR CLASES
+
+classname
+classlist

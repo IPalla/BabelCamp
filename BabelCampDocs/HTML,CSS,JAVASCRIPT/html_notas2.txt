@@ -1,0 +1,9 @@
+Menú: lista de opciones
+nav>ul>li*5
+
+menuItems(oEv){
+        oEv.preventDefault()
+        console.log(`Pulsado ${oEv.target.id}`)
+        console.dir(oEv.target.id)
+        this.vista.eArtcile.innerHTML = `<h2>${oEv.target.id.toUpperCase()}</h2>`
+}
