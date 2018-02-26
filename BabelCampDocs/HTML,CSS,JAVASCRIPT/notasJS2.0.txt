@@ -23,6 +23,10 @@ class Main {
     }, false);
 })();
 
+
+//LISTENERS
+ document.querySelector('#btnRegistrar').addEventListener("click", this.btnAdd.bind(this), false);
+
 Siempre que manejemos un evento y la funcion lleve un this hacemos .bind(this)
 
 //Para guardar arrays en LocalStorage
