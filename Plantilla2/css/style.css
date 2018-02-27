@@ -1,0 +1,14 @@
+@import "./reset.css";
+@import "../css/font-awesome/css/font-awesome.min.css";
+
+
+.footer-copyright{
+    height: 7rem;
+    bottom: -1px;
+    background-color: #474e5d;
+    color: #ffffff;
+}
+.container-fluid {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+}
